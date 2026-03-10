@@ -1,0 +1,127 @@
+/* page */
+
+.update-task-container{
+    min-height:100vh;
+    background:#0f172a;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:40px 20px;
+    font-family:"Segoe UI", sans-serif;
+}
+
+/* header */
+
+.update-header{
+    width:100%;
+    max-width:500px;
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    color:#e2e8f0;
+    margin-bottom:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* form card */
+
+.update-form-box{
+    width:100%;
+    max-width:500px;
+    background:#1e293b;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* form layout */
+
+.update-form-box form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+/* textarea */
+
+.update-form-box textarea{
+    resize:none;
+    height:100px;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #334155;
+    background:#0f172a;
+    color:#e2e8f0;
+}
+
+/* inputs */
+
+.update-form-box input,
+.update-form-box select{
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #334155;
+    background:#0f172a;
+    color:#e2e8f0;
+}
+
+/* focus */
+
+.update-form-box textarea:focus,
+.update-form-box input:focus,
+.update-form-box select:focus{
+    outline:none;
+    border-color:#3b82f6;
+}
+
+/* important checkbox */
+
+.important-box{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#e2e8f0;
+}
+
+/* buttons */
+
+.update-btn{
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#3b82f6;
+    color:white;
+    cursor:pointer;
+}
+
+.update-btn:hover{
+    background:#2563eb;
+}
+
+.back-btn{
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#334155;
+    color:#e2e8f0;
+    cursor:pointer;
+}
+
+.back-btn:hover{
+    background:#475569;
+}
+
+/* mobile */
+
+@media (max-width:600px){
+
+.update-form-box{
+padding:20px;
+}
+
+.update-header h2{
+font-size:22px;
+}
+
+}

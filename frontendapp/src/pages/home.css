@@ -1,0 +1,149 @@
+/* page background */
+
+body{
+    background:#0f172a;
+    font-family: "Segoe UI", sans-serif;
+    margin:0;
+}
+
+/* datetime */
+
+.np{
+    text-align:center;
+    color:#94a3b8;
+    font-size:20px;
+    margin-top:15px;
+}
+
+/* main layout */
+
+.home{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px 80px;
+    min-height:80vh;
+}
+
+/* left section */
+
+.home-left{
+    width:50%;
+}
+
+.home-left h1{
+    font-size:55px;
+    color:#e2e8f0;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.home-left p{
+    font-size:18px;
+    color:#94a3b8;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+/* buttons */
+
+.home-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn-primary{
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:#3b82f6;
+    color:white;
+    font-size:16px;
+    font-weight:500;
+    cursor:pointer;
+    transition:0.25s;
+}
+
+.btn-primary:hover{
+    background:#2563eb;
+}
+
+.btn-secondary{
+    padding:12px 30px;
+    border-radius:30px;
+    border:2px solid #3b82f6;
+    background:transparent;
+    color:#3b82f6;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* right section */
+
+.home-right{
+    width:40%;
+    display:flex;
+    justify-content:center;
+}
+
+.home-right img{
+    width:100%;
+    max-width:400px;
+}
+
+/* -------- Tablet -------- */
+
+@media (max-width:992px){
+
+    .home{
+        flex-direction:column;
+        text-align:center;
+        padding:50px 40px;
+    }
+
+    .home-left{
+        width:100%;
+    }
+
+    .home-right{
+        width:80%;
+        margin-top:40px;
+    }
+
+    .home-buttons{
+        justify-content:center;
+    }
+
+}
+
+/* -------- Mobile -------- */
+
+@media (max-width:576px){
+
+    .home{
+        padding:40px 25px;
+    }
+
+    .home-left h1{
+        font-size:34px;
+    }
+
+    .home-left p{
+        font-size:16px;
+    }
+
+    .home-buttons{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width:100%;
+    }
+
+    .home-right{
+        width:100%;
+    }
+
+}

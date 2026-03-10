@@ -1,0 +1,73 @@
+/* navbar background */
+
+.navbar{
+    background:#0f172a !important;
+    padding:15px 25px;
+}
+
+/* center title */
+
+.title-center{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.title-center h1{
+    color:#e2e8f0;
+    font-size:26px;
+    margin:0;
+    font-weight:600;
+}
+
+/* buttons */
+
+.nav-item.mx-3{
+    background:#3b82f6 !important;
+    border-radius:30px !important;
+    height:40px !important;
+    width:90px !important;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.nav-link{
+    color:white !important;
+    text-align:center;
+}
+
+/* hover */
+
+.nav-item.mx-3:hover{
+    background:#2563eb !important;
+}
+
+/* -------- MOBILE BEHAVIOR -------- */
+
+@media (max-width:991px){
+
+    /* buttons appear left under hamburger */
+
+    .navbar-nav{
+        margin-top:15px;
+        align-items:flex-start;
+    }
+
+    .nav-item.mx-3{
+        width:120px !important;
+        margin-left:0 !important;
+        margin-bottom:10px;
+    }
+
+}
+
+/* smaller phones */
+
+@media (max-width:576px){
+
+    .title-center h1{
+        font-size:20px;
+    }
+
+}
