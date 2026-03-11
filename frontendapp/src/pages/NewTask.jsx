@@ -20,7 +20,7 @@ function Newtask() {
 
 const userId = localStorage.getItem("userId");
 
-     await axios.post("http://localhost:5000/tasks", {
+     await axios.post("https://task-manager-zmqj.onrender.com/tasks", {
     ...task,
     user: userId,
   });

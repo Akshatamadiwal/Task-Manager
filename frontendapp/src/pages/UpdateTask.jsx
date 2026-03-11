@@ -20,7 +20,7 @@ function UpdateTask() {
     const fetchTask = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/tasks/task/${id}`
+          `https://task-manager-zmqj.onrender.com/tasks/task/${id}`
         );
         setTask(res.data);
       } catch (err) {
@@ -45,7 +45,7 @@ function UpdateTask() {
 
     try {
       await axios.put(
-        `http://localhost:5000/tasks/${id}`,
+        `https://task-manager-zmqj.onrender.com/tasks/${id}`,
         task
       );
 

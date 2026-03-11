@@ -29,7 +29,7 @@ function Signup() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/auth/register",
+        "https://task-manager-zmqj.onrender.com/auth/register",
         formData
       );
 

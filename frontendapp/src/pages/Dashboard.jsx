@@ -23,7 +23,7 @@ function Dashboard() {
     const fetchTasks = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/tasks/${userId}`
+          `https://task-manager-zmqj.onrender.com/tasks/${userId}`
         );
         setTasks(res.data);
       } catch (err) {
@@ -43,7 +43,7 @@ function Dashboard() {
 
   const handleDelete = async (taskId) => {
     try {
-      await axios.delete(`http://localhost:5000/tasks/${taskId}`);
+      await axios.delete(`https://task-manager-zmqj.onrender.com/tasks/${taskId}`);
 
       setTasks(tasks.filter((task) => task._id !== taskId));
     } catch (err) {
@@ -54,7 +54,7 @@ function Dashboard() {
   // ⭐ Toggle Complete
   const toggleComplete = async (id, completed) => {
     try {
-      await axios.put(`http://localhost:5000/tasks/${id}`, {
+      await axios.put(`https://task-manager-zmqj.onrender.com/tasks/${id}`, {
         completed: !completed,
       });
 
