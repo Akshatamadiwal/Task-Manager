@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "../../frontendapp/src/pages/home";
 import SignIn from "./pages/SignIn";
-import Signup from "./pages/signup";
+import Signup from "./pages/Signup";
 import NewTask from "./pages/NewTask"
 import Dashboard from "./pages/Dashboard"
 import UpdateTask from "./pages/UpdateTask"
